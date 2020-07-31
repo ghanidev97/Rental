@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Rentalio</string>
+    <string name="str_cari">Cari</string>
+    <string name="str_pocket">Pocket</string>
+    <string name="str_rentalio">Rentalio</string>
+    <string name="str_rp_100_000">Rp.100.000,-</string>
+    <string name="str_todo">TODO</string>
+    <string name="i_agree_to_all_terms_and_condition_applied_please_swipe_right_to_see_the_terms_condition"><![CDATA[I AGREE TO ALL TERMS AND CONDITION APPLIED (Please Swipe Right To see the terms & condition)]]></string>
+    <string name="todo">TODO</string>
+    <string name="_2010_2015">2010-2015</string>
+    <string name="honda_brio">HONDA BRIO</string>
+    <string name="_4_seat">4 SEAT</string>
+    <string name="driver_service">DRIVER SERVICE</string>
+    <string name="with_10_driver">WITH \nDRIVER</string>
+    <string name="withoout_10_driver">WITHOOUT \nDRIVER</string>
+    <string name="transmision">TRANSMISION</string>
+    <string name="at">AT</string>
+    <string name="automatic_transmision">AUTOMATIC TRANSMISION</string>
+    <string name="mt">MT</string>
+    <string name="manual_transmision">MANUAL TRANSMISION</string>
+    <string name="from">FROM</string>
+    <string name="to">TO</string>
+    <string name="price_estimate">PRICE ESTIMATE</string>
+    <string name="rp_350_000_24_hour_10_x_7_days">Rp.350.000/24 Hour \n X 7 DAYS</string>
+    <string name="total">TOTAL</string>
+    <string name="rp_2_100_000">Rp.2.100.000</string>
+    <string name="book_now">BOOK NOW</string>
+    <string name="str_book_now">BOOK NOW</string>
+
+    <string name="country_prompt">Pilih Tujuan</string>
+    <string-array name="country_arrays">
+        <item>Malaysia</item>
+        <item>United States</item>
+        <item>Indonesia</item>
+        <item>France</item>
+        <item>Italy</item>
+        <item>Singapore</item>
+        <item>New Zealand</item>
+        <item>India</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <include
+                android:id="@+id/toolbar"
+                layout="@layout/my_toolbar" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:background="@color/colorAccent">
+
+                <ImageView
+                    android:id="@+id/iv_image"
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:contentDescription="@string/todo"
+                    android:src="@drawable/brio" />
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_toRightOf="@id/iv_image"
+                    android:gravity="left"
+                    android:text="@string/honda_brio"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    tools:ignore="RtlHardcoded" />
+
+                <TextView
+                    android:id="@+id/tv_seat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_title"
+                    android:layout_toEndOf="@id/iv_image"
+                    android:text="@string/_4_seat"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_tahun"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_seat"
+                    android:layout_toEndOf="@id/iv_image"
+                    android:text="@string/_2010_2015"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_1"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@id/tv_tahun"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_toEndOf="@id/iv_image"
+                    android:background="@xml/textview_border"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_2"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@id/tv_tahun"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_toEndOf="@id/tv_1"
+                    android:background="@xml/textview_border"
+                    android:backgroundTint="@color/colorPrimaryDark"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_3"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@id/tv_tahun"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_toEndOf="@id/tv_2"
+                    android:background="@xml/textview_border"
+                    android:backgroundTint="#0820F3"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_4"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@id/tv_tahun"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_toEndOf="@id/tv_3"
+                    android:background="@xml/textview_border"
+                    android:backgroundTint="#F3083F"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_btn_driverservice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorAccent">
+
+                <RelativeLayout
+                    android:id="@+id/ll_driver_service"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_driver1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="30dp"
+                        android:text="@string/driver_service"
+                        android:textSize="10sp"
+                        tools:ignore="SmallSp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/ll_btn_with_driver"
+                    android:layout_width="160dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/ll_driver_service"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:background="#A8A8A8"
+                    android:orientation="vertical"
+                    tools:ignore="NotSibling">
+
+                    <TextView
+
+                        android:layout_centerVertical="true"
+                        android:id="@+id/btn_with_driver"
+                        android:layout_width="160dp"
+                        android:layout_height="50dp"
+                        android:layout_below="@id/tv_driver1"
+                        android:gravity="center_horizontal"
+                        android:padding="10dp"
+                        android:text="@string/with_10_driver"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/ll_btn_without_driver"
+                    android:layout_width="160dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/ll_driver_service"
+                    android:layout_toEndOf="@id/ll_btn_with_driver"
+                    android:background="#A8A8A8"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/btn_without_driver"
+                        android:layout_width="160dp"
+                        android:layout_height="50dp"
+                        android:gravity="center_horizontal"
+                        android:padding="10dp"
+                        android:text="@string/withoout_10_driver"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/ll_transmision"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ll_btn_with_driver"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_transmision"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="30dp"
+                        android:text="@string/transmision"
+                        android:textSize="10sp"
+                        tools:ignore="SmallSp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:visibility="invisible"
+                    android:id="@+id/ll_btn_transmision"
+                    android:layout_width="160dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/ll_transmision"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:background="#A8A8A8"
+                    android:orientation="vertical"
+                    tools:ignore="NotSibling">
+
+                    <TextView
+                        android:id="@+id/btn_at"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_horizontal"
+                        android:text="@string/at"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_below="@id/btn_at"
+                        android:id="@+id/btn_automatic_transmision"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:gravity="center_horizontal"
+                        android:text="@string/automatic_transmision"
+                        android:textSize="8sp"
+                        tools:ignore="SmallSp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:visibility="invisible"
+                    android:id="@+id/ll_btn_mt_transmision"
+                    android:layout_width="160dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/ll_transmision"
+                    android:layout_toEndOf="@id/ll_btn_transmision"
+                    android:background="#A8A8A8"
+                    android:orientation="vertical"
+                    tools:ignore="NotSibling">
+
+                    <TextView
+                        android:id="@+id/btn_mt"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_horizontal"
+                        android:text="@string/mt"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_below="@id/btn_mt"
+                        android:id="@+id/btn_manual_transmision"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:gravity="center_horizontal"
+                        android:text="@string/manual_transmision"
+                        android:textSize="8sp"
+                        tools:ignore="SmallSp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/ll_label_from"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ll_btn_transmision"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp">
+
+                    <TextView
+                        android:id="@+id/tv_from"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_horizontal"
+                        android:text="@string/from"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="12sp"
+                        tools:ignore="SmallSp" />
+
+                    <EditText
+                        android:layout_below="@id/tv_from"
+                        android:id="@+id/et_date1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:autofillHints="date1"
+                        android:background="@drawable/bgedittext"
+                        android:ems="10"
+                        android:inputType="textAutoComplete"
+                        tools:ignore="LabelFor" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/ll_label_to"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ll_btn_mt_transmision"
+                    android:layout_toEndOf="@id/ll_label_from"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_to"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_horizontal"
+                        android:text="@string/to"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="12sp"
+                        tools:ignore="SmallSp" />
+
+                    <EditText
+                        android:layout_below="@id/tv_to"
+                        android:id="@+id/et_date2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:autofillHints="date2"
+                        android:background="@drawable/bgedittext"
+                        android:ems="10"
+                        android:inputType="textAutoComplete"
+                        tools:ignore="LabelFor" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/ll_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ll_label_from"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:orientation="vertical">
+
+                    <EditText
+
+                        android:text="Negara Indonesia"
+                        android:drawableStart="@drawable/ic_maps"
+                        android:id="@+id/spinner_lokasi"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/bgedittext"
+                        android:gravity="center_vertical"
+                        android:prompt="@string/country_prompt"
+                        android:entries="@array/country_arrays"
+                        android:spinnerMode="dropdown" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/ll_hasil"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/ll_spinner"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_report"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/report"
+                        tools:ignore="ContentDescription" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ll_spinner"
+                    android:layout_toEndOf="@id/ll_hasil">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:ignore="UselessParent">
+
+                        <TextView
+                            android:id="@+id/tv_price"
+                            android:layout_width="80sp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginBottom="20dp"
+                            android:text="@string/price_estimate"
+                            android:textSize="10sp"
+                            tools:ignore="SmallSp" />
+
+                        <TextView
+                            android:id="@+id/tv_harga"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="80dp"
+                            android:layout_toEndOf="@id/tv_price"
+                            android:text="@string/rp_350_000_24_hour_10_x_7_days"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="10sp"
+                            tools:ignore="SmallSp" />
+
+                        <view
+                            android:id="@+id/v_atas"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_below="@id/tv_price"
+                            android:background="#090000"
+                            android:visibility="visible" />
+
+                        <TextView
+                            android:id="@+id/tv_total"
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/v_atas"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="20dp"
+                            android:text="@string/total"
+                            android:textSize="10sp"
+                            tools:ignore="SmallSp" />
+
+                        <TextView
+                            android:id="@+id/tv_harga2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/v_atas"
+                            android:layout_marginStart="70dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_toEndOf="@id/tv_total"
+                            android:text="@string/rp_2_100_000"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="15sp" />
+
+                        <view
+                            android:id="@+id/v_bawah"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_below="@id/tv_total"
+                            android:background="#090000"
+                            android:visibility="visible" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/ll_cekbox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ll_hasil"
+                    android:layout_marginTop="50dp">
+
+                    <CheckBox
+                        android:id="@+id/checkBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginEnd="30dp"
+                        android:gravity="center"
+                        android:text="@string/i_agree_to_all_terms_and_condition_applied_please_swipe_right_to_see_the_terms_condition"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/btn_book"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_below="@id/ll_cekbox"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:background="@color/colorPrimary"
+                    android:text="@string/str_book_now"
+                    android:textColor="@drawable/ic_acount" />
+            </RelativeLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

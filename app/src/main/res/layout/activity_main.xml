@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimary"
+    tools:context=".activity.MainActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:id="@+id/appBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="?attr/actionBarSize"
+                android:elevation="4dp">
+
+                <include
+                    android:id="@+id/toolbar"
+                    layout="@layout/my_toolbar" />
+
+            </com.google.android.material.appbar.AppBarLayout>
+
+            <ViewFlipper
+                android:layout_marginTop="8dp"
+                android:id="@+id/v_flipper"
+                android:layout_width="match_parent"
+                android:layout_height="240dp">
+
+            </ViewFlipper>
+
+            <RelativeLayout
+                android:background="@color/colorAccent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:ignore="UselessParent">
+
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:id="@+id/iv_dompet"
+                    android:src="@drawable/dompet"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:contentDescription="@string/str_todo" />
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:id="@+id/tv_rentalio"
+                    android:layout_toEndOf="@+id/iv_dompet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/str_rentalio"
+                    android:textStyle="bold"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_toEndOf="@id/iv_dompet"
+                    android:layout_below="@id/tv_rentalio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/str_pocket"
+                    android:textStyle="bold"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:layout_centerInParent="true"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginStart="120dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_toEndOf="@id/iv_dompet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/str_rp_100_000"
+                    android:textStyle="bold"
+                    android:textSize="16sp"/>
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:background="@color/colorAccent"
+                android:id="@+id/rv_kendaraan"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+
+
+                <com.google.android.material.bottomnavigation.BottomNavigationView
+                    android:layout_marginTop="8dp"
+                    android:id="@+id/bottom_navigation"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:menu="@menu/bottom_nav_menu"
+                    app:itemBackground="@color/colorPrimaryDark"
+                    app:itemIconTint="@android:color/white"
+                    app:itemTextColor="@android:color/white" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>
+
+
